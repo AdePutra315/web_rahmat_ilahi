@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rahmat ilahi</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body {
+        background-image: url(''); /* Nama file gambar latar belakang */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #333;
+       
+        
+
+    }
+
+    .sidebar {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100%;
+        background-color: rgba(254, 190, 0, 0.9); /* Warna kuning transparan */
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .sidebar a {
+        display: block;
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .sidebar-toggle {
+        cursor: pointer;
+    }
+</style>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Sidebar -->
+<div id="sidebar" class="sidebar bg-[rgba(0,0,0,0.5)] backdrop-blur-lg flex flex-col h-full" data-aos="fade-right" data-aos-duration="600">
+    <a href="#" id="close-sidebar" class="text-right px-4 py-2 text-white text-3xl hover:text-gray-200 transition duration-300">✖</a>
+    <a href="./" class="text-white hover:text-gray-200 mx-2 text-lg font-semibold transition duration-300"><em>home</em></a>
+    <a href="./tentang.html" class="mx-2 text-white hover:text-gray-200 text-lg font-semibold transition duration-300"><em>tentang</em></a>
+    <a href="./daftar.html" class="mx-2 text-white hover:text-gray-200 text-lg font-semibold transition duration-300"><em>daftar</em></a>
+    <a href="./detail.html" class="mx-2 text-white hover:text-gray-200 text-lg font-semibold transition duration-300"><em>detail</em></a>
+    <a href="./kontak.html" class="mx-2 text-white hover:text-gray-200 text-lg font-semibold transition duration-300"><em>kontak</em></a>
+    <a href="./alamat.html" class="mx-2 text-white hover:text-gray-200 text-lg font-semibold transition duration-300"><em>alamat</em></a>
+    <br />
+ 
+    
+    <div class="footer mt-auto p-4">
+        <p class="mb-2 text-white text-center font-semibold">
+            <em>&copy; 2024 rahmat ilahi.</em>
+        </p>
+    </div>
+</div>
+
+  <!-- Navigasi -->
+<nav class="shadow bg-green-800 mb-10 w-full justify-center fixed top-0 z-10" data-aos="fade-down" data-aos-duration="2000">
+    <div class="w-full mx-auto px-4 py-3 flex justify-between items-center">
+        <!-- Teks "rahmat ilahi" dengan efek gradien dan lebih menarik -->
+        <a href="#" class="text-4xl font-extrabold text-white hover:text-white">
+            <em>rahmat <span>ilahi.</span></em>
+        </a>
+
+          <!-- Navigasi Links -->
+          <div class="hidden md:flex space-x-6">
+            <a href="./" class="text-white hover:text-yellow-500 font-medium transition duration-300">home</a>
+            <a href="./tentang.html" class="text-white hover:text-yellow-500 font-medium transition duration-300">tentang</a>
+            <a href="./daftar.html" class="text-white hover:text-yellow-500 font-medium transition duration-300">daftar</a>
+            <a href="./detail.html" class="text-white hover:text-yellow-500 font-medium transition duration-300">detail</a>
+            <a href="./kontak.html" class="text-white hover:text-yellow-500 font-medium transition duration-300">kontak</a>
+            <a href="./alamat.html" class="text-white hover:text-yellow-500 font-medium transition duration-300">alamat</a>
+        </div>
+
+        <div class="md:hidden">
+            <button id="sidebar-toggle" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Daftar Produk Section -->
+<section id="daftar" class="py-8 bg-green-700 min-h-screen">
+    <div class="container mx-auto px-6 pt-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card: Lobster Mati -->
+            <div class="bg-green-800 p-4 rounded-lg shadow-lg" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="300">
+                <img src="./lobster.jpg" alt="Lobster Mati" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold text-yellow-500">Lobster Mati</h3>
+                <p class="text-white mt-2 text-sm">Lobster segar dan berkualitas, daging yang lembut, manis, dan kaya rasa. Siap menjadi hidangan spesial Anda.</p>
+                <strong class="text-white block">
+                    Harga:<br>
+                    1 kg: Rp 250.000<br>
+                    2 Kg: Rp 500.000<br>
+                    3 Kg: Rp 750.000<br>
+                </strong>
+                <button class="mt-4 w-full bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600">
+                    <a href="https://wa.me/6285242597386">Beli Sekarang</a>
+                </button>
+            </div>
+
+            <!-- Card: Telur Ayam Ras -->
+            <div class="bg-green-800 p-4 rounded-lg shadow-lg" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300">
+                <img src="./th.jpg" alt="Telur Ayam Ras" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold text-yellow-500">Telur Ayam Ras</h3>
+                <p class="text-white mt-2 text-sm">Telur ayam segar dan berkualitas, di produksi dari peternakan ayam sendiri, dijamin segar dan aman.</p>
+                <strong class="text-white block">
+                    Harga:<br>
+                    1 Rak Kecil: Rp 49.000<br>
+                    1 Rak Besar: Rp 52.000<br>
+                    1 Ikat: Rp 422.000<br>
+                </strong>
+                <button class="mt-4 w-full bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600">
+                    <a href="https://wa.me/6285242597386">Beli Sekarang</a>
+                </button>
+            </div>
+
+            <!-- Card: Lobster Hidup -->
+            <div class="bg-green-800 p-4 rounded-lg shadow-lg" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300">
+                <img src="./lobster.jpg" alt="Lobster Hidup" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold text-yellow-500">Lobster Hidup</h3>
+                <p class="text-white mt-2 text-sm">Lobster segar dan berkualitas, daging yang lembut, manis, dan kaya rasa. Siap menjadi hidangan spesial Anda.</p>
+                <strong class="text-white block">
+                    Harga:<br>
+                    1 kg: Rp 350.000<br>
+                    2 Kg: Rp 700.000<br>
+                    3 Kg: Rp 1.050.000<br>
+                </strong>
+                <button class="mt-4 w-full bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600">
+                    <a href="https://wa.me/6285242597386">Beli Sekarang</a>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+   
+   
+
+    </section>
+    <footer class="bg-green-800 text-white py-4 fixed bottom-0 w-full">
+        <div class="container mx-auto text-center">
+            <p>© 2024 rahmat ilahi. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init();
+
+        // Script untuk sidebar
+        const sidebar = document.getElementById("sidebar");
+        const sidebarToggle = document.getElementById("sidebar-toggle");
+        const closeSidebar = document.getElementById("close-sidebar");
+
+        // Fungsi buka sidebar
+        sidebarToggle.addEventListener("click", function () {
+            sidebar.style.left = "0px";
+        });
+
+        // Fungsi tutup sidebar
+        closeSidebar.addEventListener("click", function () {
+            sidebar.style.left = "-250px";
+        });
+
+        // Tutup sidebar jika tautan diklik
+        const sidebarLinks = document.querySelectorAll(".sidebar a");
+        sidebarLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                sidebar.style.left = "-250px";
+            });
+        });
+    </script>
+</body>
+
+</html>
