@@ -11,14 +11,14 @@
 </head>
 
 <style>
-    body {
-        background-image: url('12.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: #333;
-        overflow: hidden;
-    }
+       body {
+    background-image: url('12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    overflow: auto; /* mengganti 'hidden' menjadi 'auto' untuk menambahkan scroll */
+}
 
     .sidebar {
         width: 250px;
@@ -44,9 +44,9 @@
     }
 
     #map {
-    height: 600px; /* Tinggi peta disesuaikan dengan layar */
+    height: 500px; /* Tinggi peta disesuaikan dengan layar */
     width: 100%; /* Lebar peta disesuaikan dengan tampilan layar */
-    margin: 100px auto; /* Memberikan jarak dari bagian atas halaman dan pusatkan peta di tengah layar */
+    margin: 50px auto; /* Memberikan jarak dari bagian atas halaman dan pusatkan peta di tengah layar */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +106,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-green-800 text-white py-4 fixed bottom-0 w-full">
+    <footer class="bg-green-800 text-white py-4">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 Rahmat Ilahi. Semua Hak Dilindungi.</p>
         </div>
